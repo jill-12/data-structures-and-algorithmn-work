@@ -1,69 +1,97 @@
-# Data Structures and Algorithms Work
+# Data Structures and Algorithms — Work Collection
 
-A combined collection of small data-structures practice programs and example code. This repository gathers multiple assignments and examples into one place so you can explore, compile, and run each program independently.
+A professional collection of small, focused data-structures practice programs and example implementations. This repository gathers independent assignments so you can build, run, and review each program separately.
 
-Contents
-- stack-assignment/: simple C stack implementation and README
-- cpp-array-operations/: C++ array operation examples and a menu-driven program
-- queue_assignment.c: simple C queue implementation (menu-driven)
+Table of contents
+- About
+- Repository layout
+- Prerequisites
+- Build & run
+  - Stack (C)
+  - Queue (C)
+  - C++ Array Operations
+- Recommended housekeeping
+- Contributing
+- License
+
+About
+
+This repository combines several student assignments and example programs covering basic data-structure concepts (stack, queue, and array operations). Each exercise is self-contained and intended for learning and demonstration.
 
 Repository layout
 
 ```
 .
-├── README.md                   # this file
-├── queue_assignment.c          # queue assignment (renamed)
-├── queue assignment.c          # original filename (left in place)
+├── README.md
+├── queue_assignment.c            # cleaned queue filename
 ├── stack-assignment/
 │   ├── README.md
-│   └── Stack question.c
+│   └── "Stack question.c"
 └── cpp-array-operations/
     ├── README.md
-    ├── examples/
-    │   ├── delete.cpp
-    │   ├── display.cpp
-    │   ├── insert.cpp
-    │   ├── reverse.cpp
-    │   ├── search.cpp
-    │   ├── sort.cpp
-    │   ├── statistics.cpp
-    │   ├── traverse.cpp
-    │   └── update.cpp
-    └── src/
-        └── array_operations.cpp
+    ├── examples/                 # small single-file examples
+    └── src/                      # menu-driven array operations program
 ```
 
-How to build and run
+Prerequisites
 
-- Stack assignment (C)
+- A POSIX-like shell (Linux, macOS, WSL on Windows)
+- GCC for C programs: `gcc` (version >= 5 recommended)
+- G++ for C++ programs: `g++` (supporting C++17)
 
-  ```bash
-  gcc "stack-assignment/Stack question.c" -o stack
-  ./stack
-  ```
+Build & run
 
-- Queue assignment (C)
+Follow the commands below from the repository root. Each command example compiles a single program and then runs it.
 
-  ```bash
-  gcc "queue_assignment.c" -o queue
-  ./queue
-  ```
+1) Stack assignment (C)
 
-  Note: The original file named `queue assignment.c` is still present in the repo. I created `queue_assignment.c` as a cleaned-up filename. If you want me to remove the original file, I can do that in a follow-up commit.
+```bash
+# Compile
+gcc "stack-assignment/Stack question.c" -o stack
 
-- C++ array operations
+# Run
+./stack
+```
 
-  Compile the menu program:
-  ```bash
-  g++ -std=c++17 -Wall -Wextra -pedantic "cpp-array-operations/src/array_operations.cpp" -o array_ops
-  ./array_ops
-  ```
+2) Queue assignment (C)
 
-  Or compile any individual example in `cpp-array-operations/examples/` with a similar g++ command.
+We provide a cleaned filename `queue_assignment.c` for convenience. To build and run:
 
-Notes
-- This repo was created by combining your `Stack-Assignment` and `cpp-array-operations` repositories and adding a queue assignment file.
-- If you'd like, I can:
-  - remove the old `queue assignment.c` file so only the cleaned filename remains
-  - improve the per-subproject READMEs
-  - add a LICENSE or CONTRIBUTING file
+```bash
+# Compile
+gcc "queue_assignment.c" -o queue
+
+# Run
+./queue
+```
+
+3) C++ array operations
+
+This subproject contains both individual single-file examples and a menu-driven program located at `cpp-array-operations/src/array_operations.cpp`.
+
+To build and run the menu program:
+
+```bash
+g++ -std=c++17 -Wall -Wextra -pedantic "cpp-array-operations/src/array_operations.cpp" -o array_ops
+./array_ops
+```
+
+To compile and run any single example (for example `insert.cpp`):
+
+```bash
+g++ -std=c++17 "cpp-array-operations/examples/insert.cpp" -o insert
+./insert
+```
+
+Recommended housekeeping
+
+- The repository keeps only the cleaned `queue_assignment.c` filename for consistency.
+- If you want me to add a LICENSE in the future, I can do that separately.
+
+Contributing
+
+Contributions are welcome. For small exercises, open a pull request with a clear description of the change and a short testing note (how you built / ran the program).
+
+License
+
+No license file is currently included. If you want one added later, I can add it.
