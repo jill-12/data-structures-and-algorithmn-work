@@ -83,15 +83,6 @@ g++ -std=c++17 "cpp-array-operations/examples/insert.cpp" -o insert
 ./insert
 ```
 
-Recommended housekeeping
-
-- The repository keeps only the cleaned `queue_assignment.c` filename for consistency.
-- If you want me to add a LICENSE in the future, I can do that separately.
-
 Contributing
 
 Contributions are welcome. For small exercises, open a pull request with a clear description of the change and a short testing note (how you built / ran the program).
-
-License
-
-No license file is currently included. If you want one added later, I can add it.
