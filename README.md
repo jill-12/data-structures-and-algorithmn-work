@@ -1,6 +1,6 @@
 # Data Structures and Algorithms — Work Collection
 
-A professional collection of small, focused data-structures practice programs and example implementations. This repository gathers independent assignments so you can build, run, and review each program separately.
+A professional collection of small, focused data-structures practice programs and example implementations. This repository gathers independent assignments so you can build, run, and review each program in isolation.
 
 Table of contents
 - About
@@ -9,6 +9,7 @@ Table of contents
 - Build & run
   - Stack (C)
   - Queue (C)
+  - Tree Traversal (C++)
   - C++ Array Operations
 - Recommended housekeeping
 - Contributing
@@ -16,7 +17,7 @@ Table of contents
 
 About
 
-This repository combines several student assignments and example programs covering basic data-structure concepts (stack, queue, and array operations). Each exercise is self-contained and intended for learning and demonstration.
+This repository combines several student assignments and example programs covering basic data-structure concepts (stack, queue, tree traversal, and array operations). Each exercise is self-contained and intended to be easy to compile and understand.
 
 Repository layout
 
@@ -27,10 +28,14 @@ Repository layout
 ├── stack-assignment/
 │   ├── README.md
 │   └── "Stack question.c"
-└── cpp-array-operations/
-    ├── README.md
-    ├── examples/                 # small single-file examples
-    └── src/                      # menu-driven array operations program
+├── tree-traversal/
+│   ├── README.md
+│   └── tree_traversal.cpp
+├── cpp-array-operations/
+│   ├── README.md
+│   ├── examples/                 # small single-file examples
+│   └── src/                      # menu-driven array operations program
+└──
 ```
 
 Prerequisites
@@ -65,7 +70,19 @@ gcc "queue_assignment.c" -o queue
 ./queue
 ```
 
-3) C++ array operations
+3) Tree traversal (C++)
+
+This example demonstrates binary tree traversal in preorder, inorder, postorder, and level order.
+
+```bash
+# Compile
+g++ -std=c++17 "tree-traversal/tree_traversal.cpp" -o tree_traversal
+
+# Run
+./tree_traversal
+```
+
+4) C++ array operations
 
 This subproject contains both individual single-file examples and a menu-driven program located at `cpp-array-operations/src/array_operations.cpp`.
 
