@@ -13,11 +13,11 @@ Table of contents
   - C++ Array Operations
 - Recommended housekeeping
 - Contributing
-- License
+
 
 About
 
-This repository combines several student assignments and example programs covering basic data-structure concepts (stack, queue, tree traversal, and array operations). Each exercise is self-contained and intended to be easy to compile and understand.
+This repository combines several  assignments and example programs covering basic data-structure concepts (stack, queue, tree traversal, and array operations). Each exercise is self-contained and intended to be easy to compile and understand.
 
 Repository layout
 
