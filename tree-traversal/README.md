@@ -28,5 +28,4 @@ g++ -std=c++17 "tree_traversal.cpp" -o tree_traversal
 ./tree_traversal
 ```
 
-## Notes
-This is a beginner-friendly example meant to help students understand the differences between preorder, inorder, postorder, and level-order traversal.
+
